@@ -1,0 +1,17 @@
+#include <stdio.h>
+int compare(int *a,int *b)
+{int i,j,flag=1;
+for(i=0;i<5;i++)
+{if(*(a+i)==*(b+i))
+;
+else
+flag=0;
+}
+return flag;
+}
+int main()
+{int a[5]={1,2,3,4,5};
+int b[5]={1,2,9,4,5};
+printf("%d",compare(a,b));
+return 0;
+}
